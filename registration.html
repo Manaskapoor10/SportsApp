@@ -1,0 +1,166 @@
+<!-- registration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutShine Academy Registration</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="registration.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- REGISTRATION CONTAINER -->
+    <section class="registration-section">
+
+        <div class="registration-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="left-side">
+
+                <!-- BACK BUTTON -->
+                <a href="../Main/index.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i> Back To Home
+                </a>
+
+                <h1>Join OutShine Sports Academy</h1>
+
+                <p>
+                    Start your professional sports journey today.
+                    Register now and become a future champion.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <i class="fa-solid fa-medal"></i>
+                        <span>Professional Coaches</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>National Level Training</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span>Modern Equipment</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right-side">
+
+                <form id="registrationForm">
+
+                    <h2>Student Registration</h2>
+
+                    <!-- NAME -->
+
+                    <div class="input-box">
+                        <input type="text" id="name" required>
+                        <label>Full Name</label>
+                    </div>
+
+                    <!-- EMAIL -->
+
+                    <div class="input-box">
+                        <input type="email" id="email" required>
+                        <label>Email Address</label>
+                    </div>
+
+                    <!-- PHONE -->
+
+                    <div class="input-box">
+                        <input type="tel" id="phone" required>
+                        <label>Phone Number</label>
+                    </div>
+
+                    <!-- AGE -->
+
+                    <div class="input-box">
+                        <input type="number" id="age" required>
+                        <label>Age</label>
+                    </div>
+
+                    <!-- SPORT -->
+                    <div class="select-box">
+                        <select id="sport" required>
+                            <option value="">Choose Sport</option>
+                            <option>Football</option>
+                            <option>Cricket</option>
+                            <option>Basketball</option>
+                            <option>Volleyball</option>
+                            <option>Table Tennis</option>
+                            <option>Fitness Training</option>
+                        </select>
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="select-box">
+                        <select id="experience" required>
+                            <option value="">Experience Level</option>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+
+                    <!-- ADDRESS -->
+
+                    <div class="textarea-box">
+
+                        <textarea id="address" required></textarea>
+                        <label>Address</label>
+
+                    </div>
+
+                    <!-- SUBMIT -->
+
+                    <button type="submit" class="submit-btn">
+                        Register Now
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SUCCESS POPUP -->
+    <div class="success-popup" id="successPopup">
+        <div class="popup-content">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>Registration Successful!</h2>
+            <p>Welcome to OutShine Sports Academy.</p>
+            <button id="closePopup">Okay</button>
+        </div>
+    </div>
+
+    <!-- <section class="dataCollection">
+        <div id="studentContainer"></div>
+    </section> -->
+
+    <!-- JS -->
+
+    <!-- <script src="xregistration.js"></script> -->
+    <script src="registration.js"></script>
+</body>
+
+</html>
